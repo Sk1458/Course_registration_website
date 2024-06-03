@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        #formBox {
+            top: 50%; left: 50%;
+            height: auto;
+            width: 400px;
+            position: absolute;
+            transform:translate(-50%, -50%);
+        }
+        form {
+            width: 300px;
+            padding: 20px;
+            border: 1px solid silver;
+            border-radius: 5px;
+            background-color: crimson;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        input[type="text"], input[type="email"], input[type="submit"] {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid silver;
+            border-radius: 3px;
+            box-sizing: border-box;
+        }
+        #img {
+            width: 70px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="formBox">
+        <form id="myForm" action="/post" method="post">
+            <label for="">rollnumber</label>
+            <input type="text" name="_id" placeholder="ID"> <br>
+
+            <label for="">name</label>
+            <input type="text" name="name" placeholder="Name"> <br>
+
+            <label for="">department</label>
+            <input type="text" name="depart" placeholder="Department"> <br>
+
+            <label for="">email</label>
+            <input type="email" name="email" placeholder="Email"> <br>
+
+            <img src="java.png" alt="java" id="img">
+            <input type="checkbox" name="skills" value="java">
+
+            <img src="python.png" alt="python" id="img">
+            <input type="checkbox" name="skills" value="python">
+
+            <img src="mean.png" alt="MeanStack" id="img">
+            <input type="checkbox" name="skills" value="MeanStack"> <br> <br> <br>
+
+            <img src="ai.png" alt="aiml" id="img">
+            <input type="checkbox" name="skills" value="AIML">
+
+            <img src="js.png" alt="JS" id="img">
+            <input type="checkbox" name="skills" value="javaSc">   
+
+            <img src="mern.png" alt="Mern" id="img">
+            <input type="checkbox" name="skills" value="MernStack"> <br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
